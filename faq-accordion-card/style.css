@@ -1,0 +1,142 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(0deg, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
+}
+
+.container {
+    width: 1200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.img-container, .right-container  {
+    flex-basis: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    position: relative;
+}
+
+.first {
+    position: absolute;
+    right: 390px;
+    z-index: 1;
+    top: 250px;
+    
+}
+
+.second {
+    position: absolute;
+    right: 100px;
+    z-index: 0;
+    width: 191;
+    height: 184;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+.right-container h1 {
+    margin-bottom: 50px;
+}
+
+.accordion {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.answer{
+    transition: 0.3s all ease;
+    height: 0px;
+    overflow: hidden;
+}
+
+.slide {
+    margin-right: 20px;
+    justify-content: center;
+    position: relative;
+    bottom: 3px;
+    transition: 0.3s all ease;
+}
+
+.question:hover {
+    cursor: pointer;
+}
+
+.attribution {
+    display: flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+}
+
+.slide:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+    }
+    .img-container {
+        height: 50%;
+        display: none 
+    }
+    h1 {
+        text-align: center;
+        align-items: center;
+        margin-left: 140px;
+    }
+    .attribution {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        flex-direction: column;
+        margin-left: 100px;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }
+    .accordion {
+        width: 100%;
+    }
+    .question {
+        width: 400px;
+    }
+    .answer {
+        width: 360px;
+        height: 60px;
+    }
+}

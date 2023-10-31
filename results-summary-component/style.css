@@ -1,0 +1,142 @@
+body{
+    margin: auto;
+    padding: 0 auto;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+
+}
+
+.container{
+    margin: 0;
+    padding: 0 auto;
+    outline: none;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: auto;
+    position: relative;
+    left: 33%;
+    border-radius: 10px;
+    top: 170px;
+}
+
+.section-a{
+    margin: 0;
+    float: left;
+    background: linear-gradient(180deg, #161313, #545494);
+    border-radius: 10px;
+    height: 350px;
+    width: 50%;
+}
+
+.header{
+    font-size: 20px;
+    color: #fff;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    margin-left: 60px;
+    background: linear-gradient(180deg, #161313, #545494);    
+    color: #fff;
+    padding-top: 20px;
+}
+
+.down-header{
+    font-size: 15px;
+    color: #fff;
+}
+
+.pgf{
+    width: 150px;
+    text-align: center;
+    padding-left: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.section-b{
+    margin: 0;
+    float: left;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 350px;
+    width: 50%;
+    display: block;
+}
+
+h6{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.line{
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+}
+
+.Reaction{
+    margin: 0 auto;
+    padding-right: 100px;
+    color: #ff0000;
+    position:relative;
+    bottom: 4px;
+}
+
+.Memory{
+    margin: 0 auto;
+    padding-right: 105px;
+    color: #ddc315;
+    position:relative;
+    bottom: 4px;
+}
+
+.Verbal{
+    margin: 0 auto;
+    padding-right: 115px;
+    color: #00d06b;
+    position:relative;
+    bottom: 4px;
+}
+
+.visual{
+    margin: 0 auto;
+    padding-right: 115px;
+    color: #001aff;
+    position:relative;
+    bottom: 4px;
+}
+
+button{
+    margin: 0;
+    padding: 0 auto;
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: linear-gradient(180deg, #161313, #545494); 
+    position: relative;
+    left: 3px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px){
+    .section-b{
+        width: 50%;
+    }
+}
